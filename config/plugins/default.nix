@@ -10,5 +10,6 @@
         ./telescope.nix
         ./toggleterm.nix
         ./treesitter.nix
+        ./blink-cmp.nix
     ];
 }
