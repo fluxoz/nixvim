@@ -11,5 +11,6 @@
         ./toggleterm.nix
         ./treesitter.nix
         ./blink-cmp.nix
+        ./vim-nix.nix
     ];
 }
