@@ -1,4 +1,4 @@
-{inputs, ...}: {
+ {
   imports = [ 
     ./global.nix 
     ./colorschemes.nix
