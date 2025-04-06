@@ -7,6 +7,7 @@
                 installRustc = false;
                 installCargo = false;
             };
+            html.enable = true;
             texlab.enable = true;
             gopls.enable = true;
             dockerls.enable = true;
