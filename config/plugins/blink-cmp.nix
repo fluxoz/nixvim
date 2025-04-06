@@ -32,7 +32,12 @@
             score_offset = -7;
           };
           lsp = {
-            fallbacks = [ ];
+            enable = true;
+            servers = {
+              rust-analyzer = {
+                enable = true;
+              };
+            };
           };
         };
       };
