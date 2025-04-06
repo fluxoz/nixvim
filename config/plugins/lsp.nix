@@ -7,7 +7,22 @@
                 installRustc = false;
                 installCargo = false;
             };
-            html.enable = true;
+            html = {
+              enable = true;
+              extraOptions = {
+                filetypes = [ "html" "rust" ];
+                providerClient = {
+                  customData = [
+                    {
+                      fileMatch = [ "*.rs" ];
+                      pattern = {
+                        "*.rs" = "html!\\s*\\{[\\s\\S]*?\\}";
+                      };
+                    }
+                  ];
+                };
+              };
+            };
             texlab.enable = true;
             gopls.enable = true;
             dockerls.enable = true;
