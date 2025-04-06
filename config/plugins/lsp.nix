@@ -1,37 +1,43 @@
 {
-    plugins.lsp = {
-        enable = true;
-        servers = {
-            rust_analyzer = {
-                enable = true;
-                installRustc = false;
-                installCargo = false;
-            };
-            html = {
-              enable = true;
-              extraOptions = {
-                filetypes = [ "html" "rust" ];
-                providerClient = {
-                  customData = [
-                    {
-                      fileMatch = [ "*.rs" ];
-                      pattern = {
-                        "*.rs" = "html!\\s*\\{[\\s\\S]*?\\}";
-                      };
-                    }
-                  ];
-                };
-              };
-            };
-            texlab.enable = true;
-            gopls.enable = true;
-            dockerls.enable = true;
-            bashls.enable = true;
-            nil_ls.enable = true;
-            lua_ls.enable = true;
+  plugins = {
+    lsp = {
+      enable = true;
+      servers = {
+        rust_analyzer = {
+          enable = true;
+          installRustc = false;
+          installCargo = false;
         };
+        html = {
+          enable = true;
+          extraOptions = {
+            filetypes = [ "html" "rust" ];
+            providerClient = {
+              customData = [
+                {
+                  fileMatch = [ "*.rs" ];
+                  pattern = {
+                    "*.rs" = "html!\\s*\\{[\\s\\S]*?\\}";
+                  };
+                }
+              ];
+            };
+          };
+        };
+        texlab.enable = true;
+        gopls.enable = true;
+        dockerls.enable = true;
+        bashls.enable = true;
+        nil_ls.enable = true;
+        lua_ls.enable = true;
+      };
     };
-    plugins.lsp-lines = {
+    treesitter = {
+      enable = true;
+      ensureInstalled = [ "html" "rust" ];
+    }; 
+    lsp-lines = {
       enable = true;
     };
+  };
 }
