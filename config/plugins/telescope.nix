@@ -2,6 +2,9 @@
     plugins.web-devicons.enable = true;
     plugins.telescope = {
         enable = true;
+        settings = {
+          hidden = true;
+        };
         highlightTheme = "gruvbox";
         keymaps = {
             # Find files using Telescope command-line sugar.
