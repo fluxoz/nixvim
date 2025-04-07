@@ -2,7 +2,8 @@
     plugins.web-devicons.enable = true;
     plugins.telescope = {
         enable = true;
-        settings = {
+        settings.defaults = {
+          no_ignore = false;
           hidden = true;
         };
         highlightTheme = "gruvbox";
