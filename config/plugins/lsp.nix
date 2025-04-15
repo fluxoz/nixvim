@@ -34,7 +34,9 @@
     };
     treesitter = {
       enable = true;
-      ensureInstalled = [ "html" "rust" ];
+      settings = {
+        ensure_installed = [ "html" "rust" ];
+      };
     }; 
     lsp-lines = {
       enable = true;
