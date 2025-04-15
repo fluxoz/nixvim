@@ -36,7 +36,7 @@
             score_offset = -7;
           };
           lsp = {
-            fallbacks = [];
+            enabled = true;
           };
         };
       };
