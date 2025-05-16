@@ -30,6 +30,7 @@
         bashls.enable = true;
         nil_ls.enable = true;
         lua_ls.enable = true;
+        pyright.enable = true;
       };
     };
     treesitter = {
