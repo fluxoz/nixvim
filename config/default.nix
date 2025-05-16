@@ -16,4 +16,7 @@
     mapleader = " ";
     maplocalleader = " ";
   };
+  extraConfigLua = ''
+    vim.g.clipboard = 'osc52'
+  '';
 }

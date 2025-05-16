@@ -1,5 +1,6 @@
 {
     imports = [
+        ./blink-cmp.nix
         ./comment.nix
         ./harpoon.nix
         ./lsp.nix
@@ -10,7 +11,6 @@
         ./telescope.nix
         ./toggleterm.nix
         ./treesitter.nix
-        ./blink-cmp.nix
         ./vim-nix.nix
     ];
 }
