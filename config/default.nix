@@ -5,7 +5,6 @@
     ./plugins
     ./keymaps.nix
   ];
-  clipboard.register = "unnamedplus";
   diagnostics = {
     virtual_lines = {
       only_current_line = true;
@@ -16,7 +15,27 @@
     mapleader = " ";
     maplocalleader = " ";
   };
+  clipboard.register = "unnamedplus"; 
   extraConfigLua = ''
-    vim.g.clipboard = 'osc52'
+    vim.opt.fileformat = "unix";
+    vim.opt.fileformats = "unix";
+    local function paste()
+      return {
+        vim.fn.split(vim.fn.getreg(""), "\n"),
+        vim.fn.getregtype(""),
+      }
+    end
+
+    vim.g.clipboard = {
+      name = "OSC 52",
+      copy = {
+        ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+        ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+      },
+      paste = {
+        ["+"] = paste,
+        ["*"] = paste,
+      },
+    }
   '';
 }
