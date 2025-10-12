@@ -2,7 +2,6 @@
     imports = [
         ./blink-cmp.nix
         ./comment.nix
-        ./harpoon.nix
         ./lsp.nix
         ./lualine.nix
         ./lualine.nix
