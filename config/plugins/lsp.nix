@@ -3,6 +3,11 @@
     servers = {
       rust_analyzer = {
         enable = true;
+        config = {
+          filetypes = [
+             "rs"
+          ];
+        };
       };
       html = {
         enable = true;
@@ -13,13 +18,63 @@
           ];
         };
       };
-      texlab.enable = true;
-      gopls.enable = true;
-      dockerls.enable = true;
-      bashls.enable = true;
-      nil_ls.enable = true;
-      lua_ls.enable = true;
-      pyright.enable = true;
+      texlab = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".tex"
+          ];
+        };
+      };
+      gopls = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".go"
+          ];
+        };
+      };
+      dockerls = {
+        enable = true;
+        config = {
+          filetypes = [
+             "Dockerfile"
+             "docker-compose.yml"
+          ];
+        };
+      };
+      bashls = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".sh"
+          ];
+        };
+      };
+      nil_ls = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".nix"
+          ];
+        };
+      };
+      lua_ls = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".lua"
+          ];
+        };
+      };
+      pyright = {
+        enable = true;
+        config = {
+          filetypes = [
+             ".py"
+          ];
+        };
+      };
     };
   };
   plugins = {
