@@ -5,7 +5,7 @@
         enable = true;
         config = {
           filetypes = [
-             "rs"
+             "rust"
           ];
         };
       };
@@ -14,7 +14,7 @@
         config = {
           filetypes = [ 
             "html" 
-            "rs" 
+            "rust" 
           ];
         };
       };
@@ -22,7 +22,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".tex"
+             "tex"
           ];
         };
       };
@@ -30,7 +30,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".go"
+             "go"
           ];
         };
       };
@@ -47,7 +47,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".sh"
+             "shell"
           ];
         };
       };
@@ -55,7 +55,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".nix"
+             "nix"
           ];
         };
       };
@@ -63,7 +63,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".lua"
+             "lua"
           ];
         };
       };
@@ -71,7 +71,7 @@
         enable = true;
         config = {
           filetypes = [
-             ".py"
+             "python"
           ];
         };
       };
