@@ -3,8 +3,8 @@
   lsp = {
     servers = {
       rust_analyzer = {
-        package = pkgs.rust-analyzer; 
         enable = true;
+        activate = true;
         config = {
           filetypes = [
              "rust"
