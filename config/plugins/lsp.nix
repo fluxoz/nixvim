@@ -80,6 +80,9 @@
     };
   };
   plugins = {
+    lspconfig = {
+      enable = true;
+    };
     treesitter = {
       enable = true;
       settings = {
