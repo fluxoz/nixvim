@@ -1,7 +1,9 @@
+{pkgs, ...}:
 {
   lsp = {
     servers = {
       rust_analyzer = {
+        package = pkgs.rust-analyzer; 
         enable = true;
         config = {
           filetypes = [
