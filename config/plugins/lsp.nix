@@ -5,7 +5,7 @@
       rust_analyzer = {
         enable = true;
         activate = true;
-        config = {
+        settings = {
           filetypes = [
              "rust"
           ];
@@ -13,7 +13,7 @@
       };
       html = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [ 
             "html" 
             "rust" 
@@ -22,7 +22,7 @@
       };
       texlab = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "tex"
           ];
@@ -30,7 +30,7 @@
       };
       gopls = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "go"
           ];
@@ -38,7 +38,7 @@
       };
       dockerls = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "Dockerfile"
              "docker-compose.yml"
@@ -47,7 +47,7 @@
       };
       bashls = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "shell"
           ];
@@ -55,7 +55,7 @@
       };
       nil_ls = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "nix"
           ];
@@ -63,7 +63,7 @@
       };
       lua_ls = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "lua"
           ];
@@ -71,7 +71,7 @@
       };
       pyright = {
         enable = true;
-        config = {
+        settings = {
           filetypes = [
              "python"
           ];
