@@ -2,17 +2,17 @@
 {
   lsp = {
     servers = {
-      rust_analyzer = {
-        enable = true;
-        activate = true;
-        packageFallback = true;
-        package = null;
-        config = {
-          filetypes = [
-             "rust"
-          ];
-        };
-      };
+      # rust_analyzer = {
+      #   enable = true;
+      #   activate = true;
+      #   packageFallback = true;
+      #   package = null;
+      #   config = {
+      #     filetypes = [
+      #        "rust"
+      #     ];
+      #   };
+      # };
       html = {
         enable = true;
         config = {
@@ -82,6 +82,10 @@
     };
   };
   plugins = {
+    # doing this for rust so we can have per-project config
+    rustaceanvim = {
+      enable = true;
+    };
     lspconfig = {
       enable = true;
     };
