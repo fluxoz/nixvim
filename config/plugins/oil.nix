@@ -1,4 +1,10 @@
 {
-    plugins.oil.enable = true;
-
+    plugins.oil = {
+      enable = true;
+      settings = {
+        view_options = {
+          show_hidden = true;
+        };
+      };
+    };
 } 

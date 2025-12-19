@@ -2,9 +2,16 @@
     plugins.web-devicons.enable = true;
     plugins.telescope = {
         enable = true;
-        settings.defaults = {
-          no_ignore = false;
-          hidden = true;
+        settings = {
+          pickers = {
+            find_files = {
+              hidden = true;
+            };
+          };
+          defaults = {
+            no_ignore = false;
+            hidden = true;
+          };
         };
         highlightTheme = "gruvbox";
         keymaps = {
