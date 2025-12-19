@@ -5,6 +5,7 @@
       rust_analyzer = {
         enable = true;
         activate = true;
+        packageFallback = true;
         config = {
           filetypes = [
              "rust"
