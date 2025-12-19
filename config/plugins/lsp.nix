@@ -6,6 +6,7 @@
         enable = true;
         activate = true;
         packageFallback = true;
+        package = null;
         config = {
           filetypes = [
              "rust"
