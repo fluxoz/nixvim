@@ -5,6 +5,7 @@
         ./lsp.nix
         ./lualine.nix
         ./lualine.nix
+        ./neoconf.nix
         ./nix.nix
         ./oil.nix
         ./telescope.nix
