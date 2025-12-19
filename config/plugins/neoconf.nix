@@ -1,3 +1,0 @@
-{
-    plugins.neoconf.enable = true;
-}
