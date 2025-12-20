@@ -12,6 +12,7 @@
     virtual_text = false;
   };
   globals = {
+    exrc = true;
     mapleader = " ";
     maplocalleader = " ";
   };
