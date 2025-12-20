@@ -12,12 +12,12 @@
     virtual_text = false;
   };
   globals = {
-    exrc = true;
     mapleader = " ";
     maplocalleader = " ";
   };
   clipboard.register = "unnamedplus"; 
   extraConfigLua = ''
+    vim.o.exrc = true;
     vim.opt.fileformat = "unix";
     vim.opt.fileformats = "unix";
     local function paste()
