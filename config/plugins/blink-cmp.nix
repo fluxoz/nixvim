@@ -40,6 +40,7 @@
           };
           copilot = {
             enabled = true;
+            module = "blink-copilot";
           };
         };
       };
