@@ -59,6 +59,11 @@
             "<M-k>" = ":move-2<CR>";
             "<M-j>" = ":move+<CR>";
 
+            # Copilot commands
+            "<leader>ce" = ":Copilot enable<CR>";
+            "<leader>cd" = ":Copilot disable<CR>";
+            "<leader>cs" = ":Copilot status<CR>";
+
           };
         visual = 
           lib.mapAttrsToList

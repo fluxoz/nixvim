@@ -38,6 +38,9 @@
           lsp = {
             enabled = true;
           };
+          copilot = {
+            enabled = true;
+          };
         };
       };
     }; 

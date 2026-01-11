@@ -1,7 +1,9 @@
 {
     imports = [
         ./blink-cmp.nix
+        ./blink-copilot.nix
         ./comment.nix
+        ./copilot-lua.nix
         ./lsp.nix
         ./lualine.nix
         ./lualine.nix
