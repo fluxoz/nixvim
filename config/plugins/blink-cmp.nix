@@ -30,6 +30,7 @@
         enabled = true;
       };
       sources = {
+        default = [ "lsp" "path" "snippets" "buffer" "copilot" ];
         cmdline = [ ];
         providers = {
           buffer = {
