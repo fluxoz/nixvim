@@ -29,6 +29,8 @@
       signature = {
         enabled = true;
       };
+      # Completion sources configuration
+      # Default sources: LSP, path completion, snippets, buffer, and Copilot AI
       sources = {
         default = [ "lsp" "path" "snippets" "buffer" "copilot" ];
         cmdline = [ ];
@@ -41,7 +43,7 @@
           };
           copilot = {
             enabled = true;
-            module = "blink-copilot";
+            module = "blink-copilot";  # Uses blink-copilot integration
           };
         };
       };
