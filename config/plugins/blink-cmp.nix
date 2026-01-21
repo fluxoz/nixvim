@@ -30,7 +30,7 @@
         enabled = true;
       };
       # Completion sources configuration
-      # Default sources: LSP, path completion, snippets, buffer, and Copilot AI
+      # Default sources: lsp, path, snippets, buffer, and copilot
       sources = {
         default = [ "lsp" "path" "snippets" "buffer" "copilot" ];
         cmdline = [ ];
