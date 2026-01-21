@@ -40,7 +40,7 @@
           };
           copilot = {
             enabled = true;
-            module = "copilot-lua";
+            module = "blink-copilot";
           };
         };
       };
