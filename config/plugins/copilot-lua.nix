@@ -12,13 +12,10 @@
     enable = true;
     settings = {
       suggestion = {
-        enabled = false;  # Disabled - use blink-cmp for suggestions
+        enabled = false;  
       };
       panel = {
-        enabled = false;  # Disabled - use blink-cmp for completions
-      };
-      panel = {
-        enabled = true;  # Disabled because we use blink-cmp for completions
+        enabled = true;  
       };
       filetypes = {
         markdown = true;
