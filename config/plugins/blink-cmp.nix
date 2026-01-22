@@ -38,10 +38,10 @@
           lsp = {
             enabled = true;
           };
-          copilot = {
-            enabled = true;
-            module = "copilot-lua";
-          };
+          # copilot = {
+          #   enabled = true;
+          #   module = "copilot-lua";
+          # };
         };
       };
     }; 
