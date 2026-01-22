@@ -64,7 +64,7 @@
             "<leader>ce" = ":Copilot enable<CR>";
             "<leader>cd" = ":Copilot disable<CR>";
             "<leader>cs" = ":Copilot status<CR>";
-
+            "<leader>cp" = ":Copilot panel<CR>";
           };
         visual = 
           lib.mapAttrsToList

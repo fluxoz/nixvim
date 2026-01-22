@@ -32,7 +32,7 @@
       # Completion sources configuration
       # Default sources: lsp, path, snippets, buffer, and copilot
       sources = {
-        default = [ "lsp" "path" "snippets" "buffer" "copilot" ];
+        default = [ "lsp" "path" "snippets" "buffer" ];
         cmdline = [ ];
         providers = {
           buffer = {
