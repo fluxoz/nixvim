@@ -64,7 +64,6 @@
             "<leader>ce" = ":Copilot enable<CR>";
             "<leader>cd" = ":Copilot disable<CR>";
             "<leader>cs" = ":Copilot status<CR>";
-            "<leader>ct" = ":Copilot suggestion<CR>";
 
           };
         visual = 

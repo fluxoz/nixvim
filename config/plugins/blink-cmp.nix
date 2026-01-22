@@ -29,7 +29,10 @@
       signature = {
         enabled = true;
       };
+      # Completion sources configuration
+      # Default sources: lsp, path, snippets, buffer, and copilot
       sources = {
+        default = [ "lsp" "path" "snippets" "buffer" "copilot" ];
         cmdline = [ ];
         providers = {
           buffer = {
@@ -40,7 +43,7 @@
           };
           copilot = {
             enabled = true;
-            module = "copilot-lua";
+            module = "blink-copilot";  # Uses blink-copilot integration
           };
         };
       };
