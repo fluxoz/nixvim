@@ -3,7 +3,6 @@
     lib,
     ...
 }: {
-    
     globals = {
         mapleader = " ";
         maplocalleader = " ";
@@ -83,9 +82,22 @@
             "K" = ":m '<-2<CR>gv=gv";
             "J" = ":m '>+1<CR>gv=gv";
           };
+        terminal = 
+          lib.mapAttrsToList
+          (key: action: {
+            mode = "t";
+            inherit action key;
+            options = {
+              noremap = true;
+              desc = "Terminal: ${key} -> exit to normal mode";
+            };
+          })
+          {
+            "<esc>" = "<C-\\><C-n>";
+          };
       in
         lib.nixvim.keymaps.mkKeymaps
         {options.silent = true;}
-        (insert ++ normal ++ visual);
+        (insert ++ normal ++ visual ++ terminal);
 
 }

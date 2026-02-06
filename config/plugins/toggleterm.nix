@@ -3,12 +3,12 @@
         enable = true;
         settings = {
             open_mapping = "[[<C-t>]]";
-            direction = "float";
-            float_opts = {
-              border = "curved";
-            };
+            # direction = "bottom";
+            # float_opts = {
+            #   border = "curved";
+            # };
             start_in_insert = true;
-            size = 100;
+            size = 20;
         };
     };
 }
