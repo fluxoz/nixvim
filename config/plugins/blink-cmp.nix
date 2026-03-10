@@ -30,7 +30,7 @@
         enabled = true;
       };
       # Completion sources configuration
-      # Default sources: lsp, path, snippets, buffer, and copilot
+      # Default sources: lsp, path, snippets, buffer
       sources = {
         default = [ "lsp" "path" "snippets" "buffer" ];
         cmdline = [ ];
@@ -41,10 +41,6 @@
           lsp = {
             enabled = true;
           };
-          # copilot = {
-          #   enabled = true;
-          #   module = "copilot-lua";
-          # };
         };
       };
     }; 

@@ -57,13 +57,6 @@
             # M = Alt key
             "<M-k>" = ":move-2<CR>";
             "<M-j>" = ":move+<CR>";
-
-            # Copilot commands
-            "<leader>ca" = ":Copilot auth<CR>";
-            "<leader>ce" = ":Copilot enable<CR>";
-            "<leader>cd" = ":Copilot disable<CR>";
-            "<leader>cs" = ":Copilot status<CR>";
-            "<leader>cp" = ":Copilot panel<CR>";
           };
         visual = 
           lib.mapAttrsToList
