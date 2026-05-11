@@ -13,6 +13,9 @@
       #     ];
       #   };
       # };
+      clangd = {
+        enable = true;
+      };
       html = {
         enable = true;
         config = {
