@@ -2,17 +2,9 @@
 {
   lsp = {
     servers = {
-      # rust_analyzer = {
-      #   enable = true;
-      #   activate = true;
-      #   packageFallback = true;
-      #   package = null;
-      #   config = {
-      #     filetypes = [
-      #        "rust"
-      #     ];
-      #   };
-      # };
+      zls = {
+        enable = true;
+      };
       clangd = {
         enable = true;
       };
